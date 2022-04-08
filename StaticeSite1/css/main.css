@@ -1,9 +1,29 @@
 :root {
-  --bg-color: #04a804;
+  --bg-color: #758963;
+  --right-col: 500px;
 }
 
 body {
   margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+.flex-space-between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner {
+  max-width: 1900px;
+  width: 90%;
+  margin: auto;
 }
 
 .nav {
@@ -11,13 +31,113 @@ body {
   background-color: var(--bg-color);
 }
 
-.inner {
-  min-width: 1400px;
-  width: 95%;
-  margin: auto;
+.nav .logo {
+  font-size: 1em;
+  color: white;
 }
 
-img {
+.nav .navbar {
+  width: 40%;
+}
+
+.nav .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav .navbar ul li a {
+  font-size: 0.75em;
+  text-decoration: none;
+  color: white;
+}
+
+.nav .navbar ul .login-cta {
+  background: #181c10;
+  padding: 0.75em 3em;
+  border-radius: 20px;
+  font-size: 0.75em;
+  color: white;
+}
+
+.nav .navbar ul .login-cta:hover {
+  color: white;
+  background: var(--bg-color);
+  border: 1px solid white;
+}
+
+.hero {
+  background: #758963;
+  height: 600px;
+}
+
+.hero-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: calc((699 / 464) * 100%);
+  position: relative;
+}
+
+.left-col {
   width: 50%;
+}
+
+.left-col h1 {
+  font-size: 3.5em;
+  color: white;
+}
+
+.left-col p {
+  width: 90%;
+  color: white;
+}
+
+.left-col ul.buy-now-btn {
+  margin-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.left-col ul.buy-now-btn .buy-cta-btn {
+  background: #181c10;
+  padding: 0.75em 3em;
+  border-radius: 20px;
+  font-size: 0.75em;
+  color: white;
+}
+
+.left-col ul.buy-now-btn .explore-cta-btn {
+  background: var(--bg-color);
+  padding: 0.75em 3em;
+  border-radius: 20px;
+  border: 1px solid white;
+  font-size: 0.75em;
+  color: white;
+}
+
+.left-col ul.buy-now-btn li {
+  list-style-type: none;
+}
+
+.left-col ul.buy-now-btn a {
+  text-decoration: none;
+}
+
+.right-col {
+  width: calc(min(500px, 100%));
 }
 /*# sourceMappingURL=main.css.map */
